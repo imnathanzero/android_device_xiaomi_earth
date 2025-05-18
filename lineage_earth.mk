@@ -32,24 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
     ProductModel=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
-
-# Lunch banner maintainer variable
-RISING_MAINTAINER="kingtaksaka"
-
-# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer) 
-# Set RISING_MAINTAINER for version control 
-# (Optional if builder is setting properties via init_<device>.cpp)
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Mediatek G85 Ultra" \
-    RisingMaintainer="kingtaksaka"
-
-RISING_MAINTAINER := Kingtaksaka
-
-# Disable/enable blur support, false by default
-TARGET_ENABLE_BLUR := false
-
-# Whether to ship aperture camera, false by default
-PRODUCT_NO_CAMERA := false
-
-# Whether to ship lawnchair launcher, false by default
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
